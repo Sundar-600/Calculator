@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+declare prog+="$1.c"
+declare test=$2
+declare ans=$3
+gcc -o $1 $prog
+cat $test | bash -c "./$1" > output.txt
+declare DIFF=$(diff output.txt $ans)
+
+if test -z "$DIFF" 
+then
+	echo "All Test Passed"
+else 
+	echo "$DIFF"
+fi
