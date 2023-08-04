@@ -67,7 +67,7 @@ int main()
 				}
 				else
 				{
-					printf("\nInvalid\n");
+					printf("Invalid\n");
 				}
 				break;
 			case 2 : 
