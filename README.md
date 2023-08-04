@@ -4,6 +4,21 @@ Simple Expression Calculator in C
 
 ### Main File 
 **Calculator.c** is the main file for you to run the program 
+  - Currently we can use five operator and some symbols in the program which includes
+  - **+** : Addition
+  - **-** : Subtraction
+  - **/** : Division
+  - **\*** : Multiplication
+  - **^** : Power
+  - **()** : Brackets
+  - **.** : Dot
+    
+**Example Expressions** : It don't accept space between numbers or other alphbets or symbols except the mentioned above and makesure the () are in equals
+  - (-3\*5)+(7\*3) **Valid**
+  - (((2\*5)+3))  **Valid**
+  - (3 + 5)      **Not Valid**
+  - (3a+2b)      **Not Valid**
+  - ((2+3)       **Not Valid**
 
 ### Testing file 
 **Calculator_test.c** is the same program as the main file but it was testable using C_test bash script 
